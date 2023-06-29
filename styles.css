@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --form-bg-color: hsl(139, 54%, 83%);;
+    --form-text-color: black;
+    --form-warning-color: red;
+    --default-padding: 60px 24px;
+}
+
+body {
+    font-family: 'Mukta', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: 24px;
+}
+
+.sign-up-form label, p, input {
+    font-size: 0.9rem;
+    padding: 8px 0;
+}
+
+.sign-up-form input {
+    font-size: 0.9rem;
+    padding: 4px 2px 4px;
+    width: 100%;
+}
+
+.sign-up-form input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid lightskyblue;
+    border-radius: 2px;
+}
+
+.sign-up-form span {
+    padding: 16px 0;
+    color: var(--form-warning-color);
+    font-size: 0.7rem;
+}
+
+.sign-up-form {
+    background-color: var(--form-bg-color);
+    color: var(--form-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis:900px;
+    max-width: 350px;
+    padding: var(--default-padding);
+    border-radius: 8px;
+}
+
